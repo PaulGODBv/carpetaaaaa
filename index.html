@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Física</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+
+<div class="container">
+  <h1 class="mt-5 mb-4 text-center">Calculadora Física</h1>
+
+  <div class="btn-group d-flex justify-content-center mb-4" role="group">
+    <button type="button" class="btn btn-primary" onclick="mostrarEntradas('velocidad')">Calcular velocidad</button>
+    <button type="button" class="btn btn-primary" onclick="mostrarEntradas('fuerza')">Calcular fuerza</button>
+    <button type="button" class="btn btn-primary" onclick="mostrarEntradas('energia')">Calcular energía</button>
+    <button type="button" class="btn btn-primary" onclick="mostrarEntradas('velocidad_angular')">Calcular velocidad angular</button>
+  </div>
+
+  <div id="entradas"></div>
+
+  <div id="calcular"></div>
+
+  <div id="resultado" class="mt-4"></div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
